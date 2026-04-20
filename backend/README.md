@@ -57,6 +57,17 @@ If you want to learn more about building native executables, please consult <htt
 
 - REST ([guide](https://quarkus.io/guides/rest)): A Jakarta REST implementation utilizing build time processing and Vert.x. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it.
 
+## Weather API
+
+The backend now provides the following JSON endpoints for the Android app:
+
+- `GET /cities` - Returns all available cities.
+- `GET /weather/{cityId}` - Returns dynamic weather details for the selected city.
+
+Swagger UI is available in dev mode at:
+
+- <http://localhost:8080/swagger-ui>
+
 ## Provided Code
 
 ### REST
