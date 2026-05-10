@@ -10,4 +10,7 @@ sealed class Destination : NavKey {
 
     @Serializable
     data class WeatherDetail(val cityId: Long, val cityName: String) : Destination()
+
+    @Serializable
+    data object UserSettings : Destination()
 }
